@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #0A0A10;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    max-width: 414px;
+    min-height: 100%vh;
+    gap: 15px;
+    position: relative;
+}
+
+.blur {
+    width: 414px;
+    height: 280px;
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    background: #FFFFFF;
+    opacity: 0.25;
+    filter: blur(24px);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.conteiner-input {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 4px;
+    margin-left: 4px;
+
+}
+
+input {
+    width: 50vh;
+    height: 45px;
+    margin-bottom: 8px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+    padding-left: 4px;
+
+}
+
+input ::placeholder {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #FFFFFF;
+
+}
+
+.button-log_in {
+    background-color: #D93856;
+    cursor: pointer;
+    width: 50vh;
+    height: 68px;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 2px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: 0.6s ease;
+}
+
+.button-log_in:hover {
+    opacity: 0.8;
+}
+
+.button-log_in:active {
+    opacity: 0.6;
+}
+
+
+i {
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 2px;
+}
+
+.button-log_in_Google {
+    width: 100%;
+    height: 68px;
+    margin: 14px 0;
+    border: none;
+    background: rgba(255, 255, 255, 0.14);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-size: 17px;
+    line-height: 2px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s ease;
+
+}
+
+.button-log_in_Google:hover {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.button-log_in_Google:active {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.conteiner-link {
+    margin-top: 20px;
+    position: relative;
+}
+
+a {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: #D93856;
+    bottom: -3;
+    left: 0;
+    transition: 0.3s ease
+}
+
+a:hover::after {
+
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #D93856;
+    bottom: -3;
+    left: 0;
+
+}
+
+span {
+    color: rgb(255, 255, 255);
+}
